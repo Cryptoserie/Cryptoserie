@@ -671,11 +671,10 @@ h6 {
 }
 
 .site-nav-item {
-    display: flex;
+    display: inline-flex;
     padding: 5px 10px;
     color: #FFFFFF;
-    opacity: 0.7;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .site-nav-item:hover {
