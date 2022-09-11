@@ -182,7 +182,7 @@ const DefaultLayoutSettingsQuery = (props) => (
   }
   file(relativePath: {eq: "ghost-icon.png"}) {
     childImageSharp {
-      gatsbyImageData(width: auto, height: 45, layout: FIXED)
+      gatsbyImageData(width: 30, height: 30, layout: FIXED)
     }
   }
 }
