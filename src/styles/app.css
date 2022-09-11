@@ -769,10 +769,11 @@ h6 {
 /* ---------------------------------------------------------- */
 
 .post-feed {
+    position: relative;
     display: grid;
-    justify-content: space-between;
-    grid-gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4.8vmin 4vmin;
+    grid-template-columns: repeat(6, 1fr);
+    padding: max(4.8vmin, 36px) 0 0;
 }
 
 @media (max-width: 980px) {
