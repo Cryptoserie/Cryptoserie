@@ -817,8 +817,8 @@ h6 {
 
 
 .post-card-title {
-    margin: 0;
-    font-weight: 800;
+    margin: 0 0 10px 0;
+    padding: 0;
 }
 
 .post-card-excerpt {
