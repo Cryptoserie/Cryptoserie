@@ -553,6 +553,7 @@ h6 {
     margin-left: auto;
     margin-right: auto;
     width: auto;
+    height: 600px;
 }
 
 .content-body h1,
@@ -857,12 +858,12 @@ h6 {
     color: #2B1B21;
 }
 
-.post-card-footer-left {
+.post-card-footer-right {
     display: flex;
     align-items: center;
 }
 
-.post-card-footer-right {
+.post-card-footer-left {
     display: flex;
     flex-direction: column;
 }
