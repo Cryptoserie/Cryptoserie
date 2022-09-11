@@ -38,7 +38,7 @@ const Author = ({ data, location, pageContext }) => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        Website
+                                        Site Internet
                                     </a>
                                 )}
                                 {twitterUrl && (
