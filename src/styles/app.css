@@ -995,7 +995,16 @@ h6 {
     background: #fff;
 }
 
-.site-foot-nav {
+.site-foot a {
+    color: rgba(255,255,255,0.7);
+}
+
+.site-foot a:hover {
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+}
+
+.site-foot-nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -1004,26 +1013,30 @@ h6 {
     list-style: none;
 }
 
+.site-foot-nav li {
+    display: inline-flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    line-height: 2em;
+}
+
 .site-foot-nav a {
-    color: #5b5b5b;
-}
-
-.site-foot-nav a:hover {
-    text-decoration: none;
-    color: #515151;
-}
-
-.site-foot-nav-right a {
     position: relative;
     display: inline-flex;
     align-items: center;
     margin-left: 10px;
 }
 
-.site-foot-nav-right a:last-child {
-    padding-right: 0;
+.site-foot-nav li:not(:first-child) a:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 2px;
+    margin: 0 10px 0 0;
+    background: #fff;
+    border-radius: 100%;
 }
-
 
 
 /* Koenig Styles
