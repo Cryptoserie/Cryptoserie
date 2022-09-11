@@ -8,7 +8,7 @@ const NotFoundPage = () => (
             <article className="content" style={{ textAlign: `center` }}>
                 <h1 className="content-title">Erreur 404</h1>
                 <section className="content-body">
-                    Page non trouvée, <Link to="/">"retour à l'accueil."</Link> 
+                    Page non trouvée, <Link to="/">ACCUEIL --></Link> 
                     
                 </section>
             </article>
