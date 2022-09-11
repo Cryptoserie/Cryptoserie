@@ -831,6 +831,8 @@ h6 {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     word-break: break-word;
+    color: #565656;
+       
 }
 
 .post-card-image {
@@ -839,6 +841,9 @@ h6 {
     height: 200px;
     background: var(--color-secondary) no-repeat center center;
     background-size: cover;
+}
+.post-card.keep-ratio:not(.post-card-large):not(.post-card-full) .post-card-image {
+    position: static;
 }
 
 .post-card-footer {
