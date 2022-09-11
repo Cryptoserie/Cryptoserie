@@ -991,8 +991,8 @@ h6 {
     margin: max(12vmin, 64px) 0 0 0;
     padding-top: 48px;
     padding-bottom: 140px;
-    color: #5b5b5b;
-    background: #fff;
+    color: #fff;
+    background: #2D333B;
 }
 
 .site-foot a {
