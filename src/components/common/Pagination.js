@@ -17,7 +17,7 @@ const Pagination = ({ pageContext }) => {
             </div>
             {numberOfPages > 1 && (
                 <div className="pagination-location">
-                    Page {humanPageNumber} of {numberOfPages}
+                    Page {humanPageNumber} de {numberOfPages}
                 </div>
             )}
             <div>
