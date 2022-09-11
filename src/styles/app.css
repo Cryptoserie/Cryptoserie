@@ -787,12 +787,8 @@ h6 {
 }
 
 .post-card {
-    position: relative;
-    grid-column: span 2;
-    display: flex;
-    flex-direction: column;
-    background-size: cover;
-    word-break: break-word;
+    color: inherit;
+    text-decoration: none;
 }
 
 .post-card:hover {
