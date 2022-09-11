@@ -913,12 +913,13 @@ h6 {
 }
 
 .author-header-image {
-    flex: 0 0 auto;
-    margin: 0 0 0 4vw;
-    height: 120px;
-    width: 120px;
-    border-radius: 100%;
-    overflow: hidden;
+    display: block;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 0 0 2rem;
+    background: color-mod(var(--color-lightgrey) l(+10%));
+    border-radius: 50%;
 }
 
 .author-header-meta {
@@ -990,7 +991,7 @@ h6 {
     position: relative;
     margin: max(12vmin, 64px) 0 0 0;
     padding-top: 48px;
-    padding-bottom: 140px;
+    padding-bottom: 100px;
     color: #fff;
     background: #2D333B;
 }
@@ -1036,14 +1037,6 @@ h6 {
     margin: 0 10px 0 0;
     background: #fff;
     border-radius: 100%;
-}
-.site-foot-nav-right a {
-    display: inline-block;
-    padding: 2px 5px;
-}
-
-.site-foot-nav-right a:last-child {
-    padding-right: 0;
 }
 
 
