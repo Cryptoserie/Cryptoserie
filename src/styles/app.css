@@ -987,10 +987,12 @@ h6 {
 /* ---------------------------------------------------------- */
 
 .site-foot {
-    padding: 20px 0 40px 0;
-    color: rgba(255,255,255,0.7);
-    font-size: 1.3rem;
-    background: #EEA089;
+    position: relative;
+    margin: max(12vmin, 64px) 0 0 0;
+    padding-top: 48px;
+    padding-bottom: 140px;
+    color: #5b5b5b;
+    background: #fff;
 }
 
 .site-foot-nav {
@@ -1000,17 +1002,19 @@ h6 {
 }
 
 .site-foot-nav a {
-    color: rgba(255,255,255,0.7);
+    color: #5b5b5b;
 }
 
 .site-foot-nav a:hover {
     text-decoration: none;
-    color: rgba(255,255,255,1);
+    color: #515151;
 }
 
 .site-foot-nav-right a {
-    display: inline-block;
-    padding: 2px 5px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
 }
 
 .site-foot-nav-right a:last-child {
