@@ -144,7 +144,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Akselinc
+                              Akselinc
                             </a>
                         </div>
                         <div className="site-foot-nav-right">
