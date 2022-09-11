@@ -29,7 +29,7 @@ const PostCard = ({ post }) => {
                         />
                     </div>
                 )}
-                {post.featured && <span>Featured</span>}
+                {post.featured && <span>En vedette</span>}
                 <h2 className="post-card-title">{post.title}</h2>
             </header>
             <section className="post-card-excerpt">{post.excerpt}</section>
