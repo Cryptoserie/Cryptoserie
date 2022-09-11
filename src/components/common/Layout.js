@@ -121,14 +121,6 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     navClass="site-nav-item"
                                 />
                             </div>
-                            <div className="site-nav-right">
-                                <Link
-                                    className="site-nav-button"
-                                    to="/about"
-                                >
-                                    About
-                                </Link>
-                            </div>
                         </nav>
                     </div>
                 </header>
@@ -144,15 +136,15 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <footer className="site-foot">
                     <div className="site-foot-nav container">
                         <div className="site-foot-nav-left">
-                            <Link to="/">{site.title}</Link> © 2021 &mdash;
-                            Published with{" "}
+                            <Link to="/">{site.title}</Link> © 2022 | ;
+                            Par{" "}
                             <a
                                 className="site-foot-nav-item"
-                                href="https://ghost.org"
+                                href="https://www.akselinc.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Ghost
+                                Akselinc
                             </a>
                         </div>
                         <div className="site-foot-nav-right">
@@ -190,7 +182,7 @@ const DefaultLayoutSettingsQuery = (props) => (
   }
   file(relativePath: {eq: "ghost-icon.png"}) {
     childImageSharp {
-      gatsbyImageData(width: 30, height: 30, layout: FIXED)
+      gatsbyImageData(width: auto, height: 45, layout: FIXED)
     }
   }
 }
