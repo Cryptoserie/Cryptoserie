@@ -1,50 +1,3 @@
-/* App.css
-/* ---------------------------------------------------------- /*
-
-These are just some base styles to get you started. You delete
-these and start over using your toolset of choice, or evolve
-what's here to work the way you'd like it to.
-
-# Table of Contents
-
-- Vars
-- Reset
-- Defaults
-- Layout
-- Tag Archives
-- Author Archives
-- Pagination
-- Footer
-
-/* Variables
-/* ---------------------------------------------------------- */
-
-:root {
-
-    /* Colours */
-    --color-primary: #026FB2;
-    --color-base: #15171A;
-    --color-secondary: #5B7A81;
-    --color-border: #c7d5d8;
-    --color-bg: #f9f9f9;
-
-    /* Fonts */
-    --font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    --font-serif: Georgia, Times, serif;
-    --font-mono: Menlo, Courier, monospace;
-    --font-light: 100;
-    --font-normal: 400;
-    --font-bold: 700;
-    --font-heavy: 800;
-
-    /* Sizes */
-    --height: 4rem;
-    --margin: 2rem;
-    --radius: 0.6rem;
-
-}
-
-
 /* Reset
 /* ---------------------------------------------------------- */
 
@@ -133,16 +86,7 @@ video {
     vertical-align: baseline;
 }
 body {
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    background: #fff;
-    color: var(--color-darkgrey);
-    font-family: var(--font-sans);
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 1.6em;
+    line-height: 1;
 }
 ol,
 ul {
@@ -164,7 +108,9 @@ table {
     border-collapse: collapse;
 }
 img {
+    display: block;
     max-width: 100%;
+    height: auto;
 }
 html {
     box-sizing: border-box;
@@ -230,14 +176,28 @@ samp {
     font-family: monospace, monospace;
     font-size: 1em;
 }
+kbd {
+    padding: 3px 5px;
+    font-family: var(--font-mono);
+    font-size: 1.5rem;
+    background: #f6f8fa;
+    border: 1px solid rgba(124, 139, 154, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 -1px 0 rgba(124, 139, 154, 0.25);
+}
+@media (max-width: 600px) {
+    kbd {
+        font-size: 1.3rem;
+    }
+}
 button,
 input,
 optgroup,
 select,
 textarea {
-    margin: 0;
-    color: inherit;
-    font: inherit;
+    margin: 0; /* 3 */
+    color: inherit; /* 1 */
+    font: inherit; /* 2 */
 }
 button {
     overflow: visible;
@@ -249,11 +209,12 @@ select {
 }
 button,
 html input[type="button"],
+/* 1 */
 input[type="reset"],
 input[type="submit"] {
-    cursor: pointer;
+    cursor: pointer; /* 3 */
 
-    -webkit-appearance: button;
+    -webkit-appearance: button; /* 2 */
 }
 button[disabled],
 html input[disabled] {
@@ -272,25 +233,25 @@ input:focus {
 }
 input[type="checkbox"],
 input[type="radio"] {
-    box-sizing: border-box;
-    padding: 0;
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
 }
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     height: auto;
 }
 input[type="search"] {
-    box-sizing: content-box;
+    box-sizing: content-box; /* 2 */
 
-    -webkit-appearance: textfield;
+    -webkit-appearance: textfield; /* 1 */
 }
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
 }
 legend {
-    padding: 0;
-    border: 0;
+    padding: 0; /* 2 */
+    border: 0; /* 1 */
 }
 textarea {
     overflow: auto;
@@ -304,23 +265,19 @@ th {
     padding: 0;
 }
 
-/* Defaults
-/* ---------------------------------------------------------- */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
 
 html {
-    overflow-x: hidden;
-    overflow-y: scroll;
     font-size: 62.5%;
-    background: var(--color-base);
 
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
 body {
-    overflow-x: hidden;
-    color: #3c484e;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 1.5rem;
+    color: var(--color-darkgrey);
+    font-family: var(--font-sans);
+    font-size: 1.6rem;
     line-height: 1.6em;
     font-weight: 400;
     font-style: normal;
@@ -335,18 +292,18 @@ body {
 
 ::selection {
     text-shadow: none;
-    background: #cbeafb;
+    background: #daf2fd;
 }
 
 hr {
     position: relative;
     display: block;
     width: 100%;
-    margin: 1.8em 0 2.4em;
+    margin: 2.5em 0 3.5em;
     padding: 0;
     height: 1px;
     border: 0;
-    border-top: 1px solid #e3e9ed;
+    border-top: 1px solid #f0f0f0;
 }
 
 audio,
@@ -368,11 +325,11 @@ textarea {
     resize: vertical;
 }
 
-p,
-ul,
-ol,
-dl,
-blockquote {
+::not(.gh-content) p,
+::not(.gh-content) ul,
+::not(.gh-content) ol,
+::not(.gh-content) dl,
+::not(.gh-content) blockquote {
     margin: 0 0 1.5em 0;
 }
 
@@ -403,15 +360,19 @@ ol {
 }
 
 li {
-    margin: 0.5em 0;
     padding-left: 0.3em;
     line-height: 1.6em;
+}
+
+li + li {
+    margin-top: 0.5em;
 }
 
 dt {
     float: left;
     margin: 0 20px 0 0;
     width: 120px;
+    color: #daf2fd;
     font-weight: 500;
     text-align: right;
 }
@@ -422,15 +383,9 @@ dd {
 }
 
 blockquote {
-    margin: 0.3em 0 1.8em;
+    margin: 1.5em 0;
     padding: 0 1.6em 0 1.6em;
-    border-left: #cbeafb 0.5em solid;
-}
-
-blockquote p {
-    margin: 0.8em 0;
-    font-size: 1.2em;
-    font-weight: 300;
+    border-left: #daf2fd;
 }
 
 blockquote small {
@@ -452,12 +407,8 @@ blockquote cite a {
 }
 
 a {
-    color: #26a8ed;
+    color: #15171A;
     text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 h1,
@@ -467,39 +418,41 @@ h4,
 h5,
 h6 {
     margin-top: 0;
-    color: var(--color-base);
     line-height: 1.15;
-    font-weight: 700;
+    font-weight: 600;
     text-rendering: optimizeLegibility;
+    letter-spacing: -0.01em;
 }
 
 h1 {
     margin: 0 0 0.5em 0;
-    font-size: 4rem;
+    font-size: 4.8rem;
     font-weight: 700;
+    letter-spacing: -0.015em;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     h1 {
-        font-size: 2rem;
+        font-size: 2.8rem;
     }
 }
 
 h2 {
     margin: 1.5em 0 0.5em 0;
-    font-size: 2rem;
+    font-size: 2.8rem;
+    font-weight: 700;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     h2 {
-        font-size: 1.8rem;
+        font-size: 2.3rem;
     }
 }
 
 h3 {
     margin: 1.5em 0 0.5em 0;
-    font-size: 1.8rem;
-    font-weight: 500;
+    font-size: 2.4rem;
+    font-weight: 600;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     h3 {
         font-size: 1.7rem;
     }
@@ -507,20 +460,22 @@ h3 {
 
 h4 {
     margin: 1.5em 0 0.5em 0;
-    font-size: 1.6rem;
-    font-weight: 500;
+    font-size: 2rem;
+}
+@media (max-width: 600px) {
+    h4 {
+        font-size: 1.7rem;
+    }
 }
 
 h5 {
     margin: 1.5em 0 0.5em 0;
-    font-size: 1.4rem;
-    font-weight: 500;
+    font-size: 2rem;
 }
 
 h6 {
     margin: 1.5em 0 0.5em 0;
-    font-size: 1.4rem;
-    font-weight: 500;
+    font-size: 1.8rem;
 }
 
 /* Layout
