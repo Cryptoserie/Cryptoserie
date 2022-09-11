@@ -525,9 +525,8 @@ h6 {
 
 .container {
     margin: 0 auto;
-    max-width: 1120px;
- 
-    padding: 0 1vw;
+    max-width: 1200px;
+    width: 90%;
 }
 
 .content {
@@ -674,7 +673,7 @@ h6 {
 .site-nav-item {
     display: inline-block;
     padding: 5px 10px;
-    color: #fff;
+    color: #FFFFFF;
     opacity: 0.7;
 }
 
@@ -689,8 +688,9 @@ h6 {
 }
 
 .site-logo {
-    height: 40px;
-    width: auto;
+    flex-shrink: 0;
+    margin: 0 auto;
+    max-height: 120px;
 }
 
 .site-mast {
@@ -762,7 +762,7 @@ h6 {
 /* ---------------------------------------------------------- */
 
 .site-main {
-    padding: 4vw 0;
+    padding: 2vw 0;
 }
 
 /* Index
