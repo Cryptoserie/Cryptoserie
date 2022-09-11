@@ -549,10 +549,10 @@ h6 {
 
 .post-feature-image img {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 15px;
-    margin: 0 auto;
     width: auto;
-    height: 200px;
 }
 
 .content-body h1,
@@ -857,12 +857,12 @@ h6 {
     color: #2B1B21;
 }
 
-.post-card-footer-right {
+.post-card-footer-left {
     display: flex;
     align-items: center;
 }
 
-.post-card-footer-left {
+.post-card-footer-right {
     display: flex;
     flex-direction: column;
 }
@@ -1066,6 +1066,14 @@ h6 {
     margin: 0 10px 0 0;
     background: #fff;
     border-radius: 100%;
+}
+.site-foot-nav-left a {
+    display: inline-block;
+    padding: 2px 5px;
+}
+
+.site-foot-nav-right a:last-child {
+    padding-right: 0;
 }
 
 
