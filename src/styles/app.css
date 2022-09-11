@@ -550,10 +550,9 @@ h6 {
 .post-feature-image img {
     display: block;
     padding-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: auto;
-    height: 600px;
+    height: 200px;
 }
 
 .content-body h1,
