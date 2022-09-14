@@ -1022,7 +1022,7 @@ h6 {
     padding-top: 48px;
     padding-bottom: 75px;
     color: rgba(255,255,255,0.7);
-    background: #2D333B;
+    background: var(--color-primary);
     text-align: center;
 }
 
@@ -1069,7 +1069,7 @@ h6 {
     border-radius: 100%;
 }
 .site-foot-nav-item{
-    margin-left: 0px;
+    margin: 0px;
 }
 
 
