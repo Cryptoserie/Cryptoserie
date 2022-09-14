@@ -665,7 +665,7 @@ h6 {
     padding-top: 20px;
     padding-bottom: 20px;
     color: #fff;
-    background: var(--color-base);
+    background: #0170B5;
     background-position: center;
     background-size: cover;
 }
@@ -1070,7 +1070,7 @@ h6 {
 }
 .site-foot-nav-left a {
     display: inline-block;
-    padding: 2px 5px;
+    padding: 0px 5px;
 }
 
 .site-foot-nav-right a:last-child {
