@@ -22,7 +22,7 @@ what's here to work the way you'd like it to.
 :root {
 
     /* Colours */
-    --color-primary: #3eb0ef;
+    --color-primary: #0271B6;
     --color-base: #15171A;
     --color-secondary: #5B7A81;
     --color-border: #c7d5d8;
@@ -317,7 +317,7 @@ body {
     font-style: normal;
     letter-spacing: 0;
     text-rendering: optimizeLegibility;
-    background: #fff;
+    background: #f9f9f9;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1020,7 +1020,7 @@ h6 {
     position: relative;
     margin: max(12vmin, 64px) 0 0 0;
     padding-top: 48px;
-    padding-bottom: 100px;
+    padding-bottom: 75px;
     color: #fff;
     background: #2D333B;
     text-align: center;
@@ -1056,7 +1056,7 @@ h6 {
     position: relative;
     display: inline-flex;
     align-items: center;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .site-foot-nav li:not(:first-child) a:before {
@@ -1070,7 +1070,7 @@ h6 {
 }
 .site-foot-nav-left a {
     display: inline-block;
-    padding: 0px 5px;
+    padding: 2px 5px;
 }
 
 .site-foot-nav-right a:last-child {
