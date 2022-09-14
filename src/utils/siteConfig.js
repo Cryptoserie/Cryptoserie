@@ -5,7 +5,7 @@ module.exports = {
             ? process.env.SITE_URL || config.siteUrl || `https://cryptoserie.com`
             : `https://www.cryptoserie.com`, // Site domain. Do not include a trailing slash!
 
-    postsPerPage: 12, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
+    postsPerPage: 75, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
 
     siteTitleMeta: ``, // This allows an alternative site title for meta data for pages.
     siteDescriptionMeta: `Cryptoserie est le plus grand contenu crypto en français sur le web, allant de l'actualité crypto à la blockchain, bitcoin, portefeuilles, bots et échanges.`, // This allows an alternative site description for meta data for pages.
