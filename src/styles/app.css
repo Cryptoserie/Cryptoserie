@@ -1021,7 +1021,7 @@ h6 {
     margin: max(12vmin, 64px) 0 0 0;
     padding-top: 48px;
     padding-bottom: 75px;
-    color: #fff;
+    color: rgba(255,255,255,0.7);
     background: #2D333B;
     text-align: center;
 }
@@ -1056,7 +1056,7 @@ h6 {
     position: relative;
     display: inline-flex;
     align-items: center;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .site-foot-nav li:not(:first-child) a:before {
@@ -1068,14 +1068,10 @@ h6 {
     background: #fff;
     border-radius: 100%;
 }
-.site-foot-nav-left a {
-    display: inline-block;
-    padding: 2px 5px;
+.site-foot-nav-item{
+    margin-left: 0px;
 }
 
-.site-foot-nav-right a:last-child {
-    padding-right: 0;
-}
 
 
 /* Koenig Styles
